@@ -28,3 +28,23 @@ class Solution {
     }
 }
 ```
+
+## reference recco chao's solution
+
+[recco chao's kata power-of-two](https://gitpage.reccachao.net/kotlin/kata/power-of-two/)
+
+因為是 2 的平方數
+
+符合 1[0*] pattern
+
+所以只要檢驗 n && n-1  == 0 即可知道是否 為2的次方數
+
+```kotlin
+class Solution {
+    fun isPowerOfTwo(n: Int): Boolean {
+        if (n <= 0)
+            return false
+        return (n and (n-1)) == 0
+    }
+}
+```
